@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(30, 38%, 92%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  height: 100vh;
+  overflow: auto;
+  padding-block: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-inline: 8%;
+  max-width: 600px;
+  border-radius: 8px;
+}
+
+.container > div {
+  flex-basis: 50%;
+}
+
+.image {
+  background-image: url(./images/image-product-desktop.jpg);
+  height: 450px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px 0 0 8px;
+}
+  
+.content {
+  padding: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.4rem;
+}
+
+.pro-cat {
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  font-size: 12px;
+  color: hsl(228, 12%, 48%);
+}
+
+.pro-name {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  line-height: 1;
+}
+
+.pro-desc {
+  color: hsl(228, 12%, 48%);
+  line-height: 1.5;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+.new {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  color: hsl(158, 36%, 37%);
+  margin-right: 20px;
+}
+
+.old {
+  color: hsl(228, 12%, 48%);
+  text-decoration: line-through;
+}
+
+button:hover {
+  background-color: hsl(158, 49%, 29%);
+}
+
+.cart {
+  background-color: hsl(158, 36%, 37%);
+  color: white;
+  height: 40px;
+  border: none;
+  border-radius: 7.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+}
+
+.cart img {
+  padding-right: 20px;
+}
+
+
+@media (max-width: 500px) {
+  body {
+    height: auto;
+  }
+  .container {
+    flex-direction: column;
+    align-items: stretch;
+  } 
+
+  .container > div {
+    flex-basis: auto;
+  }
+  
+  .image {
+    background-image: url(./images/image-product-mobile.jpg);
+    height: 250px;
+    background-position: top;
+    background-size: cover;
+    border-radius: 8px 8px 0 0;
+  }
+}
