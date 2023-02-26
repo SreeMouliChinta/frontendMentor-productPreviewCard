@@ -1,6 +1,7 @@
 # Frontend Mentor - Product preview card component
 
 Please check the below link to visit the LIVE PAGE of the Project:
+
 [GitHub Live Page - Product preview card component - Sree Mouli Chinta](https://sreemoulichinta.github.io/project-preview-card-fem/)
 
 ![Design preview for the Product preview card component coding challenge](./design/desktop-preview.jpg)
